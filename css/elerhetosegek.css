@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #333;
+    color: white;
+    font-family: 'Finger Paint';
+    font-size: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+td {
+    padding-right: 40px;
+}
+
+td::first-letter,
+th::first-letter {
+    text-transform: uppercase;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+
+/* Clearfix (Floatok tisztítása) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.nap {
+    text-align: left;
+    padding-left: 25px;
+}
+
+.elerhetosegek {
+    text-align: left;
+    padding-left: 25%;
+}
+
+@media screen and (max-width: 1300px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    table {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    table {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table {
+        font-size: 13px;
+    }
+}

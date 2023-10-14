@@ -1,0 +1,219 @@
+* {
+    border-radius: 15px;
+}
+
+body {
+    background-image: url("../img/hatter.jpg");
+    background-repeat: repeat-x;
+}
+
+main {
+    /* border: 1px solid red; */
+    /* csak develop miatt */
+    margin: auto;
+    margin-top: 50px;
+    /* Hogy ne csússzon bele a navba */
+    width: 85%;
+    padding: 10px;
+    text-align: center;
+}
+
+.pizza {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 300px;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border: 1px solid black;
+    display: inline-table;
+    transition: 0.3s;
+    /* Ha a transition ide van téve és nem a hover-be akkor ha leveszed az egeret akkor is smooth az animáció */
+}
+
+.pizzacim {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+}
+
+.price {
+    color: red;
+    font-size: 25px;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    font-weight: bolder;
+}
+
+.priceAkcios {
+    text-decoration: line-through;
+    color: red;
+    font-size: 25px;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+    font-weight: bolder;
+}
+
+.hozzavalokcim {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.hozzavalok {
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.pizza:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    margin: 0 auto;
+}
+
+.pizza button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.pizza button:hover {
+    opacity: 0.9;
+    background-color: green;
+}
+
+#rendelesButton {
+    color: white;
+    background-color: #169b6a;
+}
+
+footer {
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer>* {
+    flex: 1 100%;
+}
+
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.nav__title {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+footer address {
+    font-style: normal;
+    color: #999;
+}
+
+.footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer li {
+    line-height: 2em;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer__nav>* {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.nav__ul a {
+    color: #999;
+}
+
+.nav__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+}
+
+.legal {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+}
+
+.legal__links {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+        margin-left: auto;
+        /* Made with szöveget igazítja be */
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .footer__nav>* {
+        flex: 1;
+    }
+    .nav__item--extra {
+        flex-grow: 2;
+    }
+    .footer__addr {
+        flex: 1 0px;
+    }
+    .footer__nav {
+        flex: 2 0px;
+    }
+}

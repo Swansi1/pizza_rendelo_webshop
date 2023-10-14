@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin-bottom: 5%;
+}
+
+.cim {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #333;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+
+/* Clearfix (Floatok tisztítása) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+video {
+    margin: auto;
+    width: 100% !important;
+    height: auto !important;
+    border: 1px solid #916D40;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+audio {
+    margin: 10px 25px 10px 25px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1300px) {
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    audio {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #cim {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    audio {
+        width: 150px;
+    }
+    #cim {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 50%;
+}
+
+.pb {
+    color: rgb(216, 219, 19);
+}
+
+#focim {
+    font-family: 'Finger Paint';
+    font-size: 40px;
+    font-weight: bolder;
+    border: 10px;
+    border-style: double;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/focimhatter.jpg");
+    padding: 1%;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+
+/* Clearfix (Floatok tisztítása) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 1600px) {
+    #focim {
+        font-size: 30px;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #focim {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #focim {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #focim {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #focim {
+        font-size: 15px;
+    }
+}
