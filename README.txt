@@ -1,4 +1,4 @@
-Tisztelt javító tanárok!
+Kedves Mindenki!
 
 Weboldalunkat kérjük úgy teszteljék, hogy a webszerver root könyvtárában van a project vagy egy külön virtualhost lett neki létrehozva (mivel úgy is lett készítve a weboldal hogy egy pizzarendelős oldal amit feltételeznénk hogy a valóéletben is egy rendes domain alatt lenne nem pedig könyvtárakban.)
 
